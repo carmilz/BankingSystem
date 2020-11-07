@@ -1,17 +1,17 @@
 /*
 * 파일이름: AccountHandler.h
 * 작성자: CarMilZ
-* 업데이트 정보: 2020.10.31 Ver 0.8
+* 업데이트 정보: 2020.10.31 Ver 0.9
 */
 
 #pragma once
 #include "Account.h"
-#include "AccountArray.h"
+#include "BoundCheckArray.h"
 
 class AccountHandler
 {
 private:
-	BoundCheckAccountPtrArray accArr;
+	BoundCheckArray<Account*> accArr;
 	int accNum;
 public:
 	AccountHandler();
